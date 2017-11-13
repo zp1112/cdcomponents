@@ -40,7 +40,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: 'cdcomponents.min.css'
+      filename: utils.assetsPath('css/[name].[contenthash].css')
     }),
     new OptimizeCSSPlugin()
   ]

@@ -9,13 +9,13 @@ gulp.task('compile', function () {
   return gulp.src('./src/*.css')
     .pipe(postcss([salad]))
     .pipe(cssmin())
-    .pipe(gulp.dest('./lib'))
+    .pipe(gulp.dest('../../dist/theme-default'))
 })
 
 gulp.task('copyfont', function () {
   return gulp.src('./src/fonts/**')
     .pipe(cssmin())
-    .pipe(gulp.dest('./lib/fonts'))
+    .pipe(gulp.dest('../../dist/fonts'))
 })
 
 gulp.task('build', ['compile', 'copyfont'])
