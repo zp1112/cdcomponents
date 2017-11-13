@@ -4,7 +4,7 @@
           :key="index"
           :class="{'cd__billboard__span--trans': trans[index] && item === '*'}"
           :style="{width: `${width}px`,height: `${width}px`}">
-      <img :src="myImgs[index]" v-if="myImgs[index]" :class="{'cd__billboard--you': myImgs[index] === 'you'}"/>
+      <img :src="myImgs[index]"/>
       <i :class="{'cd__billboard__i--trans': trans[index]}"></i>
     </span>
   </div>
@@ -16,6 +16,9 @@
       imgs: {
         type: Array,
         default: () => []
+      },
+      lastOne: {
+        type: String
       },
       strings: {
         type: Array,
@@ -45,7 +48,7 @@
     mounted () {
       const length = this.myStrings.length
       const startLen = this.myStrings.split(' ').join('').length
-    // startLen1为最后一个突破渲染时，将该图片改为'you'
+    // startLen1为最后一个突破渲染时，将该图片改为lastOne
       let startLen1 = 0
       const tempArr = new Array(length).fill(0).map((v, i) => v = i)
       for (let i = 0; i < length; i += 1) {
@@ -56,7 +59,7 @@
             startLen1 += 1
             this.myImgs[i] = this.imgs.splice(Math.random() * this.imgs.length, 1)[0]
             if (startLen1 === startLen) {
-              this.myImgs[i] = 'you'
+              this.myImgs[i] = this.lastOne
             }
             this.$set(this.trans, i, false)
           }

@@ -14,19 +14,6 @@
     img{
       width: 100%;
       height: 100%;
-      &.cd__billboard--you:after{
-        content: "YOU";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #F40;
-        line-height: 38px;
-        font-size: 14px;
-        color: #FFF;
-        text-align: center;
-      }
     }
     i{
       display: inline-block;

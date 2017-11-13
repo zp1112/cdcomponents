@@ -6,7 +6,7 @@
 
 <div class="demo-block">
   <div id="app">
-    <CdBillboard :imgs="imgs" :strings="strings" :width="30"/>
+    <CdBillboard :imgs="imgs" :strings="strings" :width="30" :lastOne="this.lastOne"/>
   </div>
 </div>
 
@@ -14,27 +14,30 @@
 ```html
 
 <div id="app">
-  <CdBillboard :imgs="imgs" :strings="strings" :width="30"/>
+  <CdBillboard :imgs="imgs" :strings="strings" :width="30" :lastOne="this.lastOne"/>
 </div>
 
 <script>
-  // imgs为需要渲染的图片，数量必须为strings总字符数
-  const imgs = [];
-  for (let i = 1; i <= 58; i += 1) {
-    const index = (i % 11) || 1;
-    imgs.push(require(`./imgs/face${index}.jpg`));
-  }
 
   export default {
     name: 'App',
     components: { },
     data() {
       return {
-        imgs,
+        imgs: [],
         strings: []
       };
     },
     created() {
+      // imgs为需要渲染的图片，for循环的数量必须为strings总字符数
+      for (let i = 1; i <= 42; i += 1) {
+        if (i === 42) {
+          this.lastOne = require(`./imgs/you.png`);
+        } else {
+          const index = (i % 12) || 1;
+          this.imgs.push(require(`./imgs/face${index}.jpg`));
+        }
+      }
       // strings格式为拼接出来的字母字样，如下为  EIOD
       this.strings = [
         '**** ****  *  * *',
@@ -58,3 +61,4 @@
 | imgs     | 照片数组   | Array  |   -            |    —     |
 | strings     | 组成字母的数组*的集合   | Array    |   - |     —    |
 | width     | 每个照片的width   | Number    | — | 50   |
+| lastOne     | 最后显示的图片元素   | String    | — | －   |
