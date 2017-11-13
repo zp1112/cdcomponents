@@ -1,0 +1,22 @@
+{
+  "name": "cdcomponents",
+  "version": "1.0.9",
+  "description": "cdcomponents theme default",
+  "main": "lib/index.css",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [
+    "cdcomponents",
+    "theme"
+  ],
+  "author": "candyZheng",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.4.0",
+    "postcss-salad": "^1.0.8"
+  },
+  "dependencies": {}
+}

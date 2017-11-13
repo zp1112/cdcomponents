@@ -1,0 +1,9 @@
+{
+  "首页": [
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    }
+  ]
+}
