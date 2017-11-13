@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import demoBlock from './components/demo-block.vue'
 import CdComponents from '../packages/index'
-import '../packages/theme-default/lib/index.css'
+import '../packages/theme-default/lib/theme-default/index.css'
 
 Vue.component('demo-block', demoBlock)
 Vue.use(CdComponents)

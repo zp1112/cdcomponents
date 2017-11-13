@@ -1,5 +1,5 @@
 {
-  "name": "cdcomponents",
+  "name": "cdcomponents-theme-chalk",
   "version": "1.0.9",
   "description": "cdcomponents theme default",
   "main": "lib/index.css",
