@@ -25,11 +25,11 @@ module.exports = {
     bundleAnalyzerReport: process.env.npm_config_report
   },
   demo: {
-    env: require('./prod.env'),
+    env: require('./demo.env'),
     index: path.resolve(__dirname, '../demo/index.html'),
     assetsRoot: path.resolve(__dirname, '../demo'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/cdcomponents/',
     productionSourceMap: false,
     productionGzip: false,
     productionGzipExtensions: ['js', 'css']
@@ -38,7 +38,7 @@ module.exports = {
     env: require('./dev.env'),
     port: process.env.PORT || 8080,
     autoOpenBrowser: true,
-    assetsSubDirectory: '/',
+    assetsSubDirectory: '/static',
     assetsPublicPath: '/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
