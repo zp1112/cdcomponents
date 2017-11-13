@@ -4,7 +4,7 @@
           :key="index"
           :class="{'cd__billboard__span--trans': trans[index] && item === '*'}"
           :style="{width: `${width}px`,height: `${width}px`}">
-      <img :src="myImgs[index]"/>
+      <img :src="myImgs[index]" :class="{'cd__billboard__img': myImgs[index]}"/>
       <i :class="{'cd__billboard__i--trans': trans[index]}"></i>
     </span>
   </div>
