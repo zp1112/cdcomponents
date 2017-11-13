@@ -31,7 +31,7 @@ npm install cdcomponents -save
 
 ```js
 import cdcomponents from 'cdcomponents' // 引入组件库
-import 'cdcomponents/dist/cdcomponents.min.css' // 引入样式库
+import 'cdcomponents/dist/theme-default/index.css' // 引入样式库
 
 Vue.use(cdcomponents)
 ```
