@@ -1,0 +1,9 @@
+#!/bin/bash node
+
+cd dist
+git init
+git add .
+git commit -m "auto push"
+git remote add origin http://git2.aegis-info.com/zhengping/cdcomponents.git
+git push -f --set-upstream origin master:gh-pages
+
