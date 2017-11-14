@@ -2,16 +2,22 @@
  * @author candyZheng
  * Date: 17/11/12
  */
+import Vue from 'vue'
 import Row from './row/index'
 import Col from './col/index'
 import Billboard from './billboard'
 import Count from './count'
+import Chat from './chat'
+import extend from '../src/extend'
+
+Vue.use(extend)
 
 const components = [
   Row,
   Col,
   Billboard,
-  Count
+  Count,
+  Chat
 ]
 
 const install = function (Vue) {
@@ -28,5 +34,6 @@ export default {
   Row,
   Col,
   Billboard,
-  Count
+  Count,
+  Chat
 }

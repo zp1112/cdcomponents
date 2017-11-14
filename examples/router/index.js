@@ -9,13 +9,10 @@ let routes = []
 Object.keys(navConf).forEach((header) => {
   routes = routes.concat(navConf[header])
 })
-
 routes.forEach((route) => {
   route.component = r => require.ensure([], () =>
     r(require(`../docs/${route.name}.md`)))
 })
-
-console.log(routes)
 
 export default new Router({
   routes: routes

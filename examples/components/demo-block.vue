@@ -44,6 +44,8 @@
     background-color: #F7F7F7;
     border: 1px solid #e2ecf4;
     border-top: none;
+    overflow: scroll;
+    height: 500px;
     pre code {
       font-family: Consolas,Menlo,Courier,monospace;
       line-height: 22px;

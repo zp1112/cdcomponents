@@ -15,5 +15,9 @@
     "desc": "Count 渐变效果",
     "name": "count",
     "path": "/count"
+  }, {
+    "desc": "Chat 聊天框",
+    "name": "chat",
+    "path": "/chat"
   }]
 }

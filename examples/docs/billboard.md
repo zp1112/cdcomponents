@@ -24,6 +24,7 @@
     components: { },
     data() {
       return {
+        lastOne: '',
         imgs: [],
         strings: []
       };
