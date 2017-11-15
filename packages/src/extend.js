@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import directives from './directives'
 
-module.exports = {
+export default {
   install () {
     Vue.use(directives)
   }

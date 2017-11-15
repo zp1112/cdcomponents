@@ -19,5 +19,9 @@
     "desc": "Chat 聊天框",
     "name": "chat",
     "path": "/chat"
+  }, {
+    "desc": "Menu 菜单特效",
+    "name": "menu",
+    "path": "/menu"
   }]
 }

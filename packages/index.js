@@ -3,12 +3,14 @@
  * Date: 17/11/12
  */
 import Vue from 'vue'
-import Row from './row/index'
-import Col from './col/index'
+import Row from './row'
+import Col from './col'
 import Billboard from './billboard'
 import Count from './count'
 import Chat from './chat'
-import extend from '../src/extend'
+import Menu from './menu'
+import MenuItem from './menu-item'
+import extend from './src/extend'
 
 Vue.use(extend)
 
@@ -17,7 +19,9 @@ const components = [
   Col,
   Billboard,
   Count,
-  Chat
+  Chat,
+  Menu,
+  MenuItem
 ]
 
 const install = function (Vue) {
@@ -35,5 +39,7 @@ export default {
   Col,
   Billboard,
   Count,
-  Chat
+  Chat,
+  Menu,
+  MenuItem
 }

@@ -40,6 +40,7 @@
     "markdown-it-container": "^2.0.0",
     "path": "^0.12.7",
     "transliteration": "^1.6.2",
+    "velocity-animate": "^1.5.0",
     "vue": "^2.5.2",
     "vue-markdown-loader": "^2.2.3",
     "vue-router": "^3.0.1"

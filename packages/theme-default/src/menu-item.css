@@ -1,0 +1,23 @@
+@import "common/var.css";
+
+@b cd{
+  @e menu-item{
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @e icon{
+      box-shadow: var(--menu-item-shadow);
+    }
+    @e icon:hover{
+      box-shadow: var(--menu-item-hover-shadow);
+    }
+  }
+}

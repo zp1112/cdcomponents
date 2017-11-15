@@ -24,6 +24,13 @@
   --border-radius-base: 4px;
   --border-radius-small: 2px;
   --border-radius-circle: 100%;
+  /* Menu
+  -------------------------- */
+  --menu-button-center-color: #74A982;
+  --menu-button-center-width: 40px;
+  --menu-button-center-size: 40px;
+  --menu-item-shadow: 0 0 10px #666;
+  --menu-item-hover-shadow: 0 0 20px #666;
 
   /* Button
   -------------------------- */
